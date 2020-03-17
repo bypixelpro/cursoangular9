@@ -1,0 +1,9 @@
+<img class="card-img-top" src="{{product.picture}}" alt="{{product.title}}">
+<div class="card-body">
+  <h5 class="card-title">{{product.title}}</h5>
+  <p class="card-text">{{product.desc}}</p>
+  <p class="card-text">Precio: {{product.price}}€</p>
+  <button type="button" class="btn btn-primary"
+  [disabled]="isdisabled()"
+  (click)="matricularse()">{{matricula}}</button>
+</div>
